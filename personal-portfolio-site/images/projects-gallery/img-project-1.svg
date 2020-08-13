@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="150" viewBox="0 0 300 150">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-project-one);
+      }
+
+      .cls-2 {
+        fill: #ffe3e3;
+      }
+
+      .cls-3 {
+        filter: url(#Rectangle_1);
+      }
+    </style>
+    <filter id="Rectangle_1" x="-75" y="-75" width="450" height="300" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-opacity="0.961"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-project-one">
+      <rect width="300" height="150"/>
+    </clipPath>
+  </defs>
+  <g id="project-one" class="cls-1">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" class="cls-2" width="300" height="150"/>
+    </g>
+  </g>
+</svg>
