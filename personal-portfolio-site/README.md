@@ -1,6 +1,6 @@
 # Personal PortFolio 
 
-![Portfolio Logo](images-readme.md\img-logo-1x.svg)
+![Portfolio Logo](images-readme.md/img-logo-1x.svg)
 
 This is a digital *Personal PortFolio*. A platform where one can showcase the following: education history, work experience, skills, relevant competencies, hobbies & interests, personal and contact information. This site is open for viewing and collaboration from the general public as well as potential employment possibilities from recruiters.
 
@@ -23,7 +23,7 @@ In addition, the page called *PortFolio* has a heading labelled **Projects Galle
 
  This site is a design template for a user interested in creating their own *Digital Personal PortFolio*. It has been split into 7 pages namely: *Home, About, Education, Work, PortFolio, Contact* and *Downloads*.
 
- In order to achieve this I began by drawing up a sketch of how the site would look like as shown in this link [Site PDF Mockup](images-readme.md\personal-portfolio-site-layouts.pdf)
+ In order to achieve this I began by drawing up a sketch of how the site would look like as shown in this link [Site PDF Mockup](images-readme.md/personal-portfolio-site-layouts.pdf)
 
 ## Features
 
@@ -229,13 +229,13 @@ Feature 13 (Downloads) &mdash; *allows the user to link the following documents:
 - The [Bootstrap](https://getbootstrap.com/) Framework has built in media queries which can be used to style the site so as to fit the devices that it is being viewed on.
 
 - Automated Testing for mobile version using [Google Lighthouse ext](https://developers.google.com/web/tools/lighthouse#devtools) 
-    - [Google Lighthouse Testing Results for the entire site](images-readme.md\google-lighthouse-automated-testing.pdf)
+    - [Google Lighthouse Testing Results for the entire site](images-readme.md/google-lighthouse-automated-testing.pdf)
 
 - Testing was also conducted manually whereby friends and family browsed clicked the link sent and navigated through the site on various devices and gave their feedback in the process of making this site. 
 
 - [Bootstrap Media Queries](https://getbootstrap.com/docs/4.5/layout/overview/) allows me to stack the content into a single column on smaller devices such as smartphones; single and double columns on tablets and single, double or more columns on larger devices.
 
-One bug that I have encountered in my testing  is in my timeline html file. [(X)HTML5 validation results for work.html bug](images-readme.md\bug-work-html-validation.pdf)
+One bug that I have encountered in my testing  is in my timeline html file. [(X)HTML5 validation results for work.html bug](images-readme.md/bug-work-html-validation.pdf)
 
 ## Deployment
 
