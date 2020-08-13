@@ -1,0 +1,111 @@
+Prerequisites:
+
+    - Text Editor (Gitpod, Atom, Notepad ++, VS Code, Dreamweaver...)
+    - Web Browser (Microsoft Edge, Google Chrome, Mozilla Firefox Nightly Internet Explorer...)
+
+    TODOs
+
+    1. Building the Personal Portfolio Project
+        - creating the folders
+        - adding the files
+        - connecting the files
+        - creating and connecting layouts
+        - push to GitHub
+
+    2. Navbar
+        - 7 links
+        - names
+
+    3. Portfolio items
+        - documents
+        - images
+        - titles
+        - descriptions
+        - animations
+        - javascript
+
+    4. Home page
+        - Header
+            - logo
+            - Name
+        - Navbar
+        - Main
+            - Carousel
+        - Footer
+            - Social and Professional Links
+            - Copyright
+
+    5. About
+        - Header
+            - logo
+            - Name
+        - Navbar
+        - Main
+            - split column layout
+            - content
+            - image
+        - Footer
+            - Social and Professional Links
+            - Copyright
+
+    6. Education
+        - Header
+            - logo
+            - Name
+        - Navbar
+        - Main
+            - split column layout
+            - content
+            - Accordion Collapse
+        - Footer
+            - Social and Professional Links
+            - Copyright
+
+    7. Work
+        - Header
+            - logo
+            - Name
+        - Navbar
+        - Main
+            - split column layout
+            - content
+            - Timeline
+        - Footer
+            - Social and Professional Links
+            - Copyright
+
+    8. PortFolio
+        - Header
+            - logo
+            - Name
+        - Navbar
+        - Main
+            - split column layout
+            - Projects Gallery
+        - Footer
+            - Social and Professional Links
+            - Copyright
+
+    9. Contact
+        - Header
+            - logo
+            - Name
+        - Navbar
+        - Main
+            - split column layout
+            - content
+        - Footer
+            - Social and Professional Links
+            - Copyright
+
+    10. Downloads
+        - Header
+            - logo
+            - Name
+        - Navbar
+        - Main
+            - split column layout
+            - content
+        - Footer
+            - Social and Professional Links
+            - Copyright
