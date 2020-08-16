@@ -216,7 +216,9 @@ Feature 13 (Downloads) &mdash; *allows the user to link the following documents:
 
 - [Bootstrap](https://getbootstrap.com/) &mdash; The Front-End web Framework used
 
-- [Google Fonts](https://fonts.google.com/specimen/Old+Standard+TT?sidebar.open=true&selection.family=Josefin+Sans|Jost|Old+Standard+TT&query=old+st) &mdash; The Font Families used 
+- [Google Fonts](https://fonts.google.com/specimen/Old+Standard+TT?sidebar.open=true&selection.family=Josefin+Sans|Jost|Old+Standard+TT&query=old+st) &mdash; The Font Families used
+
+- [Stack Overflow](https://stackoverflow.com/) &mdash; Troubleshooting
 
 ## Testing
 
