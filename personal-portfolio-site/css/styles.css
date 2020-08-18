@@ -254,10 +254,10 @@ footer a {
     -ms-transform: translatey(-100000px);
     -o-transform: translatey(-100000px);
     transform: translatey(-100000px);
-    -webkit-animation: slidedown 2100ms forwards;
-    -moz-animation: slidedown 2100ms forwards;
-    -o-animation: slidedown 2100ms forwards;
-    animation: slidedown 2100ms forwards;
+    -webkit-animation: slidedown 1000ms forwards;
+    -moz-animation: slidedown 1000ms forwards;
+    -o-animation: slidedown 1000ms forwards;
+    animation: slidedown 1000ms forwards;
 }
 
 @-webkit-keyframes slidedown {
@@ -281,39 +281,39 @@ footer a {
 }
 
 footer a:nth-child(1) {
-    animation-delay: 2300ms;
+    animation-delay: 1000ms;
 }
 
 footer a:nth-child(2) {
-    animation-delay: 2500ms;
+    animation-delay: 1100ms;
 }
 
 footer a:nth-child(3) {
-    animation-delay: 2700ms;
+    animation-delay: 1200ms;
 }
 
 footer a:nth-child(4) {
-    animation-delay: 2900ms;
+    animation-delay: 1300ms;
 }
 
 footer a:nth-child(5) {
-    animation-delay: 3100ms;
+    animation-delay: 1400ms;
 }
 
 footer a:nth-child(6) {
-    animation-delay: 3300ms;
+    animation-delay: 1500ms;
 }
 
 footer a:nth-child(7) {
-    animation-delay: 3500ms;
+    animation-delay: 1600ms;
 }
 
 footer a:nth-child(8) {
-    animation-delay: 3700ms;
+    animation-delay: 1700ms;
 }
 
 footer a:nth-child(9) {
-    animation-delay: 3900ms;
+    animation-delay: 1800ms;
 }
 
 footer a i {
