@@ -104,137 +104,133 @@
                 </div>
                 <br>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-                    <article>
-                        <h1 class="text-center">Booking your Destination</h1>
-                        <br>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-booking" role="tabpanel"
-                                aria-labelledby="list-booking-list">
-                                <article>
-                                    <h2>Booking</h2>
-                                    <form class="was-validated">
-                                        <fieldset>
-                                            <legend>Booking Form</legend>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <label for="inputFirstName">First Name:</label>
-                                                    <input id="inputFirstName" type="text" class="form-control"
-                                                        placeholder="First name" required>
-                                                </div>
-                                                <div class="col">
-                                                    <label for="inputLastName">Last Name:</label>
-                                                    <input id="inputLastName" type="text" class="form-control"
-                                                        placeholder="Last name" required>
-                                                </div>
+                    <br>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-booking" role="tabpanel"
+                            aria-labelledby="list-booking-list">
+                            <article>
+                                <h1>Booking</h1>
+                                <br>
+                                <form class="was-validated">
+                                    <fieldset>
+                                        <legend>Booking Form</legend>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="inputFirstName">First Name:</label>
+                                                <input id="inputFirstName" type="text" class="form-control"
+                                                    placeholder="First name" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputLastName">Last Name:</label>
+                                                <input id="inputLastName" type="text" class="form-control"
+                                                    placeholder="Last name" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="inputPhoneNumber">Phone Number:</label>
+                                                <input id="inputPhoneNumber" class="form-control" type="text"
+                                                    placeholder="Area Code + Phone Number" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="arrival-date">Arrival Date:</label>
+                                                <input id="arrival-date" class="form-control" type="date" required>
                                             </div>
                                             <br>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <label for="inputPhoneNumber">Phone Number:</label>
-                                                    <input id="inputPhoneNumber" class="form-control" type="text"
-                                                        placeholder="Area Code + Phone Number" required>
-                                                </div>
+                                            <div class="col">
+                                                <label for="arrival-time">Arrival Time:</label>
+                                                <input id="arrival-time" class="form-control" type="time" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <br>
+                                            <div class="col">
+                                                <label for="departure-date">Departure Date:</label>
+                                                <input id="departure-date" class="form-control" type="date" required>
                                             </div>
                                             <br>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <label for="arrival-date">Arrival Date:</label>
-                                                    <input id="arrival-date" class="form-control" type="date" required>
-                                                </div>
-                                                <br>
-                                                <div class="col">
-                                                    <label for="arrival-time">Arrival Time:</label>
-                                                    <input id="arrival-time" class="form-control" type="time" required>
-                                                </div>
+                                            <div class="col">
+                                                <label for="departure-time">Departure Time:</label>
+                                                <input id="departure-time" class="form-control" type="time" required>
                                             </div>
-                                            <br>
-                                            <div class="form-row">
-                                                <br>
-                                                <div class="col">
-                                                    <label for="departure-date">Departure Date:</label>
-                                                    <input id="departure-date" class="form-control" type="date"
-                                                        required>
-                                                </div>
-                                                <br>
-                                                <div class="col">
-                                                    <label for="departure-time">Departure Time:</label>
-                                                    <input id="departure-time" class="form-control" type="time"
-                                                        required>
-                                                </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="flight-type">Type of Flight: </label>
+                                                <select class="custom-select" id="flight-type">
+                                                    <option value="one-way">One-way</option>
+                                                    <option value="return-or-round-trip">Return or Round trip
+                                                    </option>
+                                                    <option value="open-jaw">Open jaw</option>
+                                                </select>
                                             </div>
-                                            <br>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <label for="flight-type">Type of Flight: </label>
-                                                    <select class="custom-select" id="flight-type">
-                                                        <option value="one-way">One-way</option>
-                                                        <option value="return-or-round-trip">Return or Round trip
-                                                        </option>
-                                                        <option value="open-jaw">Open jaw</option>
-                                                    </select>
-                                                </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="passenger-numbers">Number of Passengers:</label>
+                                                <select class="custom-select" id="passenger-numbers">
+                                                    <option value="one">One</option>
+                                                    <option value="two">Two</option>
+                                                    <option value="more">More</option>
+                                                </select>
                                             </div>
-                                            <br>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <label for="passenger-numbers">Number of Passengers:</label>
-                                                    <select class="custom-select" id="passenger-numbers">
-                                                        <option value="one">One</option>
-                                                        <option value="two">Two</option>
-                                                        <option value="more">More</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <br>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <div class="form-row">
-                                                        <div class="col-7">
-                                                            <label for="inputArrivalCity">Arrival City:</label>
-                                                            <input type="text" placeholder="Arrival City"
-                                                                id="inputArrivalCity" class="form-control">
-                                                        </div>
-                                                        <div class="col">
-                                                            <label for="inputArrivalState">State</label>
-                                                            <input type="text" placeholder="State"
-                                                                id="inputArrivalState" class="form-control">
-                                                        </div>
-                                                        <div class="col">
-                                                            <label for="inputArrivalZip">Zip</label>
-                                                            <input type="text" placeholder="Zip" id="inputArrivalZip"
-                                                                class="form-control">
-                                                        </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-row">
+                                                    <div class="col-7">
+                                                        <label for="inputArrivalCity">Arrival City:</label>
+                                                        <input type="text" placeholder="Arrival City"
+                                                            id="inputArrivalCity" class="form-control">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="inputArrivalState">State</label>
+                                                        <input type="text" placeholder="State" id="inputArrivalState"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="inputArrivalZip">Zip</label>
+                                                        <input type="text" placeholder="Zip" id="inputArrivalZip"
+                                                            class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <br>
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <div class="form-row">
-                                                        <div class="col-7">
-                                                            <label for="inputDepartureCity">Departure City:</label>
-                                                            <input type="text" placeholder="Departure City"
-                                                                id="inputDepartureCity" class="form-control">
-                                                        </div>
-                                                        <div class="col">
-                                                            <label for="inputDepartureState">State</label>
-                                                            <input type="text" placeholder="State"
-                                                                id="inputDepartureState" class="form-control">
-                                                        </div>
-                                                        <div class="col">
-                                                            <label for="inputDepartureZip">Zip</label>
-                                                            <input type="text" placeholder="Zip" id="inputDepartureZip"
-                                                                class="form-control">
-                                                        </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-row">
+                                                    <div class="col-7">
+                                                        <label for="inputDepartureCity">Departure City:</label>
+                                                        <input type="text" placeholder="Departure City"
+                                                            id="inputDepartureCity" class="form-control">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="inputDepartureState">State</label>
+                                                        <input type="text" placeholder="State" id="inputDepartureState"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="inputDepartureZip">Zip</label>
+                                                        <input type="text" placeholder="Zip" id="inputDepartureZip"
+                                                            class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
-                                        </fieldset>
-                                    </form>
-                                </article>
-                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </article>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </main>
