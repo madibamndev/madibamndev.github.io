@@ -147,7 +147,6 @@ Feature 7 (Transport Options) &mdash; *allows the user to browse through the 2 a
       Kenya Car Hire Services
       Active Car Hire & Safaris
       Market Car Hire
-      Location, Country
 
  Public Transport
       Matatu (vans & mini buses)
@@ -209,7 +208,7 @@ Feature 10 (Soko - "Shop") &mdash; *allows the user to browse through the **Prod
 
 ```
  Forms
- ecommerce page
+ Ecommerce page
  Activities
  More Content
  Animations
