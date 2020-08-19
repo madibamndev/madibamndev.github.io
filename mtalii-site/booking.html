@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mtalii - Destinations & Booking</title>
+    <meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A platform for you to pick your next holiday destination by using google maps.">
+    <!-- Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost:wght@500&display=swap">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+</head>
+
+<body>
+    <!-- Home Page content starts here -->
+    <div class="container-fluid" style="height: 100%;">
+        <br>
+        <!-- Header content starts here -->
+        <header>
+            <div class="row">
+                <div class="col">
+                    <a href="index.html" target="_blank">
+                        <img class="brand-logo figure-img img-fluid float-left px-2" src="/images/logo/mtalii-logo.svg"
+                            alt="Spanish green and Vivid Auburn gradient Circular Mtalii logo">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Header content ends here -->
+        <br>
+        <!-- Nav content starts here -->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg custom-navbar nav-fill custom-navbar-bg">
+                    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link " target="_blank" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " target="_blank" href="booking.html">Destinations &
+                                    Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " target="_blank" href="holiday-packages.html">Holiday
+                                    Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="accomodation-alternatives.html">Accomodation
+                                    Alternatives</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="transport-options.html">Transport
+                                    Options</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="soko.html">Soko</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav content ends here -->
+        <br>
+        <!-- Main content starts here -->
+        <main>
+            <div class="row">
+                <div class="col">
+                    <article>
+                        <h1>Destinations</h1>
+                        <br>
+                        <div id="map" class="rounded shadow-lg"></div>
+                    </article>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <aside>
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-booking-list"
+                                data-toggle="list" href="#list-booking" role="tab" aria-controls="list-booking" style="background-color: #000000; color:
+                                        #ffffff;">Booking Form</a>
+                        </div>
+                    </aside>
+                </div>
+                <br>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                    <article>
+                        <h1 class="text-center">Booking your Destination</h1>
+                        <br>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-booking" role="tabpanel"
+                                aria-labelledby="list-booking-list">
+                                <article>
+                                    <h2>Booking</h2>
+                                    <form class="was-validated">
+                                        <fieldset>
+                                            <legend>Booking Form</legend>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <label for="inputFirstName">First Name:</label>
+                                                    <input id="inputFirstName" type="text" class="form-control"
+                                                        placeholder="First name" required>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="inputLastName">Last Name:</label>
+                                                    <input id="inputLastName" type="text" class="form-control"
+                                                        placeholder="Last name" required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <label for="inputPhoneNumber">Phone Number:</label>
+                                                    <input id="inputPhoneNumber" class="form-control" type="text"
+                                                        placeholder="Area Code + Phone Number" required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <label for="arrival-date">Arrival Date:</label>
+                                                    <input id="arrival-date" class="form-control" type="date" required>
+                                                </div>
+                                                <br>
+                                                <div class="col">
+                                                    <label for="arrival-time">Arrival Time:</label>
+                                                    <input id="arrival-time" class="form-control" type="time" required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <br>
+                                                <div class="col">
+                                                    <label for="departure-date">Departure Date:</label>
+                                                    <input id="departure-date" class="form-control" type="date"
+                                                        required>
+                                                </div>
+                                                <br>
+                                                <div class="col">
+                                                    <label for="departure-time">Departure Time:</label>
+                                                    <input id="departure-time" class="form-control" type="time"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <label for="flight-type">Type of Flight: </label>
+                                                    <select class="custom-select" id="flight-type">
+                                                        <option value="one-way">One-way</option>
+                                                        <option value="return-or-round-trip">Return or Round trip
+                                                        </option>
+                                                        <option value="open-jaw">Open jaw</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <label for="passenger-numbers">Number of Passengers:</label>
+                                                    <select class="custom-select" id="passenger-numbers">
+                                                        <option value="one">One</option>
+                                                        <option value="two">Two</option>
+                                                        <option value="more">More</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-row">
+                                                        <div class="col-7">
+                                                            <label for="inputArrivalCity">Arrival City:</label>
+                                                            <input type="text" placeholder="Arrival City"
+                                                                id="inputArrivalCity" class="form-control">
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="inputArrivalState">State</label>
+                                                            <input type="text" placeholder="State"
+                                                                id="inputArrivalState" class="form-control">
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="inputArrivalZip">Zip</label>
+                                                            <input type="text" placeholder="Zip" id="inputArrivalZip"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-row">
+                                                        <div class="col-7">
+                                                            <label for="inputDepartureCity">Departure City:</label>
+                                                            <input type="text" placeholder="Departure City"
+                                                                id="inputDepartureCity" class="form-control">
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="inputDepartureState">State</label>
+                                                            <input type="text" placeholder="State"
+                                                                id="inputDepartureState" class="form-control">
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="inputDepartureZip">Zip</label>
+                                                            <input type="text" placeholder="Zip" id="inputDepartureZip"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </article>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <!-- Main content ends here -->
+        <br>
+        <!-- Footer content starts here -->
+        <footer class="p-2">
+            <div class="row">
+                <div class="col">
+                    <div class="card text-center border-0" style="background-color: transparent;">
+                        <div class="card-body">
+                            <!-- copyright content starts here -->
+                            <small>© Copyright 2020 Mtalii, <em>All rights reserved</em></small>
+                            <!-- copyright content ends here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer content ends here -->
+        <br>
+    </div>
+    <!-- Home page content ends here -->
+    <script>
+        function initMap() {
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 6,
+                center: {
+                    lat: -0.02355,
+                    lng: 37.90619
+                }
+            });
+
+            var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            var locations = [{
+                    lat: -1.29206,
+                    lng: 36.82194
+                },
+                {
+                    lat: -4.04347,
+                    lng: 39.6682
+                },
+                {
+                    lat: -0.0917,
+                    lng: 34.76795
+                },
+                {
+                    lat: 0.28273,
+                    lng: 34.75186
+                },
+                {
+                    lat: 0.56952,
+                    lng: 34.55837
+                },
+                {
+                    lat: 1.01908,
+                    lng: 35.0023
+                },
+                {
+                    lat: 3.31224,
+                    lng: 35.56578
+                },
+                {
+                    lat: 2.44264,
+                    lng: 37.97845
+                },
+                {
+                    lat: 3.57379,
+                    lng: 40.95868
+                },
+                {
+                    lat: -3.00229,
+                    lng: 39.81674
+                },
+                {
+                    lat: -4.05749,
+                    lng: 39.15436
+                },
+                {
+                    lat: -1.47698,
+                    lng: 35.09277
+                },
+                {
+                    lat: -1.33427,
+                    lng: 36.77964
+                },
+                {
+                    lat: -2.96442,
+                    lng: 37.91111
+                },
+                {
+                    lat: -2.65268,
+                    lng: 37.26056
+                },
+                {
+                    lat: -2.38472,
+                    lng: 38.29333
+                },
+                {
+                    lat: -1.01208,
+                    lng: 36.62526
+                },
+                {
+                    lat: -4.28501,
+                    lng: 39.43084
+                },
+                {
+                    lat: 0.62038,
+                    lng: 36.08394
+                },
+                {
+                    lat: -0.75577,
+                    lng: 33.43835
+                },
+                {
+                    lat: 3.62679,
+                    lng: 36.00229
+                },
+                {
+                    lat: 1.89818,
+                    lng: 35.33389
+                },
+                {
+                    lat: -1.42517,
+                    lng: 38.05614
+                },
+                {
+                    lat: -0.89786,
+                    lng: 36.46812
+                },
+                {
+                    lat: -1.27607,
+                    lng: 36.81728
+                },
+                {
+                    lat: -1.28883,
+                    lng: 36.82323
+                }
+            ];
+
+            var markers = locations.map(function (location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+    </script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr7qDLOI-jEXyFc5wi3bnYl64T8Amr4w4&callback=initMap"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script async defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
