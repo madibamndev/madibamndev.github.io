@@ -31,7 +31,7 @@ In addition, the page called *PortFolio* has a heading labelled **Projects Galle
 
 ```
 Background-color Hex code: #FFDEAD (Navajowhite)
-Text color Hex code: ##2d2620
+Text color Hex code: #2d2620
 ```
 
 ### Google Fonts
