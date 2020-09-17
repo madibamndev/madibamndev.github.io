@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+{% extends 'index.html' %}
+
+{% block title %}Categories{% endblock title %}
+
+<!-- Block Content starts here -->
+{% block content %}
+    <!-- Block Header content starts here -->
+    {% block header %}
+        <p class="flow-text">In the form below you can view and/or edit a category.</p>
+    {% endblock header %}
+    <!-- Block Header content ends here --> 
+    <!-- Block Main content starts here -->
+    {% block main %}
+        <div class="row">
+            <article>
+                <h1 class="center-align">Categories</h1>
+                {% for category in categories %}
+                    <div class="row">
+                        <div class="col s12">
+                            <article>
+                                <h1 class="center-align">Category</h1>
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header deep-purple darken-4"
+                                            style="color: #fff59d; font-weight: 500;">
+                                            <i class="large material-icons"
+                                                style="color: #fff59d; font-weight: 500;">format_list_bulleted</i>
+                                        </div>
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <p class="flow-text">
+                                                    <strong>{{category.category_name}}</strong>
+                                                </p>
+                                                <br>
+                                                <a href="{{url_for('add_category')}}" class="waves-effect waves-light btn deep-purple darken-4" style="color: #fff59d;">
+                                                    <i class="material-icons right" style="color: #fff59d;">add</i>Add
+                                                </a>
+                                                <a href="{{url_for('edit_category', category_id=category._id)}}" class="waves-effect waves-light btn deep-purple darken-4" style="color: #fff59d;">
+                                                    <i class="material-icons right" style="color: #fff59d;">edit</i>Edit
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                {% endfor %}
+            </article>
+        </div>
+    {% endblock main %}
+    <!-- Block Main content ends here -->
+{% endblock %}
+<!-- Block content ends here -->
+

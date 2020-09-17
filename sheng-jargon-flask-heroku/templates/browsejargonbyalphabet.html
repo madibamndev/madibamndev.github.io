@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+{% extends 'index.html' %}
+
+{% block title %}Browse jargon by alphabet{% endblock title %}
+
+<!-- Block Content starts here -->
+{% block content %}
+    <!-- Block Header content starts here -->
+    {% block header %}
+        <p class="flow-text">Browse the Jargon by selecting an alphabet below.</p>
+    {% endblock header %}
+    <!-- Block Header content ends here -->
+    <!-- Block Main content starts here -->
+    {% block main %}
+        {% for task in jargon %}
+            <div class="row">
+                <div class="col s12">
+                    <article>
+                        <h1 class="center-align">Browse by alphabet</h1>
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header deep-purple darken-4"
+                                    style="color: #fff59d; font-weight: 500;">
+                                    <i class="large material-icons" style="color: #fff59d; font-weight: 500;">keyboard_arrow_down</i>Aa - Zz
+                                </div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <p class="flow-text">
+                                            <em>{{task.category_name}}</em>
+                                        </p>
+                                        <p class="flow-text">
+                                            <strong>{{task.word}}</strong>
+                                        </p>
+                                        <p class="flow-text">
+                                            <strong style="color: #3e2723;">Definition:</strong>
+                                            <em>{{task.definition}}</em>
+                                        </p>
+                                        <p class="flow-text">
+                                            <strong style="color: #1b5e20;">Meaning:</strong>
+                                            <em>{{task.meaning}}</em>
+                                        </p>
+                                        <p class="flow-text">
+                                            <strong>Synonyms:</strong> {{task.synonyms}}
+                                        </p>
+                                        <p class="flow-text">
+                                            <strong>Opposite:</strong> {{task.antonyms_or_opposite}}
+                                        </p>
+                                        <p class="flow-text">
+                                            <strong>Part of Speech:</strong> {{task.part_of_speech}}
+                                        </p>
+                                        <p class="flow-text" style="color: rgb(250, 4, 4);">
+                                            <strong>Alphabet:</strong> {{task.alphabets}}
+                                        </p>
+                                        <p class="flow-text">
+                                            <strong>Date Added:</strong> {{task.date_added}}
+                                        </p>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        {% endfor %}
+    {% endblock main %}
+    <!-- Block Main content ends here -->
+{% endblock %}
+<!-- Block content ends here -->

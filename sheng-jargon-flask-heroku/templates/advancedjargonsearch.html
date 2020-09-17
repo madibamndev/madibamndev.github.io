@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+{% extends 'index.html' %}
+
+{% block title %}Advanced Word Search{% endblock title %}
+
+<!-- Block Content starts here -->
+{% block content %}
+    <!-- Block Header content starts here -->
+    {% block header %}
+        <p class="flow-text">For an advanced search, 
+            select your options and enter your jargon in the search box below.
+        </p>
+    {% endblock header %}     
+    <!-- Block Header content ends here -->
+    <!-- Block Main content starts here -->
+    {% block main %}
+        <div class="row">
+            <div class="col s12">
+                <article>
+                    <h1 class="center-align">Advanced Jargon Search</h1>
+                    <form action="#" method="#">
+                        <fieldset>
+                            <legend>Advanced Word Search Form</legend>
+                            <div class="row">
+                                <div class="input-field col s12 m6 l4 xl3">
+                                    <select>
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="adjective">Adjective</option>
+                                        <option value="adverb">Adverb</option>
+                                        <option value="conjunction">Conjunction</option>
+                                        <option value="determiner">Determiner</option>
+                                        <option value="interjection">Interjection</option>
+                                        <option value="noun">Noun</option>
+                                        <option value="Preposition">Preposition</option>
+                                        <option value="pronoun">Pronoun</option>
+                                        <option value="verb">Verb</option>
+                                    </select>
+                                    <label>Part Of Speech</label>
+                                </div>
+                                <div class="input-field col s12 m6 l4 xl3 offset-xl1">
+                                    <select>
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="meaning">Meaning</option>
+                                        <option value="definition">Definition</option>
+                                    </select>
+                                    <label>Meaning or Definition</label>
+                                </div>
+                                <div class="input-field col s12 m6 l4 xl3 offset-xl1">
+                                    <select>
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="synonym">Synonym</option>
+                                        <option value="opposite">Opposite</option>
+                                    </select>
+                                    <label>Synonym or Opposite</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="advanced-word-search" type="text" class="validate">
+                                    <label for="advanced-word-search">Advanced Word Search</label>
+                                    <span class="helper-text" data-error="wrong" data-success="right">One Word or an
+                                        expression</span>
+                                    <br>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light deep-purple darken-4"
+                                style="color: #fff59d;" type="submit" name="action">Search
+                                <i class="large material-icons right" style="color: #fff59d;">search</i>
+                            </button>
+                        </fieldset>
+                    </form>
+                </article>
+            </div>
+        </div>
+    {% endblock main %}
+    <!-- Block Main content ends here-->
+{% endblock %}
+<!-- Block content ends here -->
