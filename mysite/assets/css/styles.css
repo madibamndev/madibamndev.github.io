@@ -1,0 +1,119 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #455a64;
+    font-family: 'Raleway',
+    cursive;
+    text-align: center;
+}
+
+p {
+    color: #4b0082;
+    font-family: 'Old Standard TT', sans-serif;
+}
+
+a {
+    color: #4b0082;
+    font-family: 'Old Standard TT', sans-serif;
+}
+
+i {
+    color: #4b0082;
+    font-family: 'Old Standard TT', sans-serif;
+}
+
+strong {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+form {
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+body {
+    background-color: #fef5e7;
+    height: 100%;
+}
+
+nav {
+    background-color: #263238;
+    height: 100px;
+}
+nav a i {
+    color: #fff59d;
+}
+
+nav ul li a {
+    color: #fafafa;
+    font-family: 'Jost', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    height: 100px;
+    padding-top: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+    color: #ffa726;
+}
+
+.fa-bars {
+    color: #fef5e7;
+}
+
+#mobile.nav {
+    background-color: #fef5e7;
+}
+
+#mobile-nav li a {
+    color: #fafafa;
+}
+
+.btn {
+    background-color: #ffa726;
+    border-radius: 6.18px;
+    color: #4b0082;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #ffb74d;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+/* label color */
+.input-field label {
+    color: #000000 !important;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: #000000 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000000;
+    box-shadow: 0 1px 0 0 #000000;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid#4caf50 !important;
+    box-shadow: 0 1px 0 0 #000000;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #f44336 !important;
+    box-shadow: 0 1px 0 0 #000000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #00BFFF !important;
+}
