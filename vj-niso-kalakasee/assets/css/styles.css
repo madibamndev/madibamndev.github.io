@@ -1,0 +1,39 @@
+body {
+    background-color: #1B0A38;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #98cff8;
+}
+
+p {
+    color: #E8D5B5;
+}
+
+a {
+    color: #A978F2;
+}
+
+small {
+    color: #E8D5B5;
+}
+
+fieldset {
+    color: #E8D5B5;
+}
+
+label {
+    color: #E8D5B5;
+}
+
+.jumbotron {
+    background-color: #1B0A38;
+}
+
+.card {
+    background-color: #1B0A38;
+}
+
+.breadcrumb {
+    background-color: #1B0A38;
+}
