@@ -1,13 +1,13 @@
 body {
-    background-color: #1B0A38;
+    background-color: #180d2e;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #98cff8;
+    color: #A77CE4;
 }
 
 p {
-    color: #E8D5B5;
+    color: #FFFADE;
 }
 
 a {
@@ -27,7 +27,7 @@ label {
 }
 
 .jumbotron {
-    background-color: #1B0A38;
+    background-color: #180d2e;
 }
 
 .card {
@@ -35,5 +35,26 @@ label {
 }
 
 .breadcrumb {
+    background-color: #180d2e;
+}
+
+.tab-content {
+    background-color: #180d2e;
+}
+
+#collapseClothing {
+    background-color: #180d2e;
+}
+
+#collapseAccessories {
+    background-color: #180d2e;
+}
+
+#collapseFootwear {
+    background-color: #180d2e;
+}
+
+.list-group-item {
     background-color: #1B0A38;
 }
+
