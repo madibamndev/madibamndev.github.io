@@ -12,7 +12,8 @@
     <!-- Google analytics -->
     <link rel="preconnect" href="https://www.google-analytics.com">
     <!-- Import Google Fonts -->
-    <link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Raleway:wght@600&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Oswald:wght@500&display=swap">
     <!-- Font Awesome icons -->
     <link rel="preconnect stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
@@ -100,7 +101,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 offset-xl-2 pb-3">
-                        <form>
+                        <form method="POST" name="contactmeform" action="contact-me-form-to-email.php" autocomplete="on">
                             <fieldset>
                                 <legend>Contact Form</legend>
                                 <div class="form-row">
@@ -126,7 +127,7 @@
                                 </div>
                             </fieldset>
                             <br>
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button class="btn btn-primary" type="submit" value="Submit">Submit form</button>
                         </form>
                     </div>
                 </div>

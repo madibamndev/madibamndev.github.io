@@ -12,7 +12,8 @@
     <!-- Google analytics -->
     <link rel="preconnect" href="https://www.google-analytics.com">
     <!-- Import Google Fonts -->
-    <link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Raleway:wght@600&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Oswald:wght@500&display=swap">
     <!-- Font Awesome icons -->
     <link rel="preconnect stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
@@ -96,7 +97,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 offset-xl-2 pb-3">
-                        <form>
+                        <form method="POST" name="bookingserviceform" action="booking-form-to-email.php" autocomplete="on">
                             <fieldset>
                                 <legend>Bookings Form</legend>
                                 <div class="form-row">
@@ -111,18 +112,19 @@
                                 </div>
                                 <br>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail">Email address:</label>
+                                    <label for="exampleInputEmail">Email Address:</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
                                 <br>
                                 <div class="form-group">
-                                    <label for="inputTelNumber">Phone number:</label>
+                                    <label for="inputTelNumber">Phone Number:</label>
                                     <input type="tel" class="form-control" id="inputTelNumber" placeholder="+countrycode then the number">
                                     <small id="telHelp" class="form-text text-muted">Observe this format <em>+countrycode followed by the number</em>.</small>
                                 </div>
                                 <br>
-                                <select class="custom-select custom-select-lg mb-3">
+                                <label for="service-select">Type of service:</label>
+                                <select class="custom-select custom-select-lg mb-3" id="service-select">
                                     <option selected>Choose a service</option>
                                     <option value="1">Emcee</option>
                                     <option value="2">Event Planner</option>
@@ -134,13 +136,23 @@
                                 </select>
                                 <br>
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Additional Info:</label>
+                                    <label for="exampleFormControlTextarea1">Additional Information:</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write your additional info here" maxlength="550" rows="4"></textarea>
-                                    <small id="textareaHelp" class="form-text text-muted">Please keep the Additional Info concise.</small>
+                                    <small id="textareaHelp" class="form-text text-muted">Please keep the additional info concise.</small>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <label for="inputDate">Booking Date:</label>
+                                        <input type="date" class="form-control" id="inputDate">
+                                    </div>
+                                    <div class="col">
+                                        <label for="inputTime">Booking Time:</label>
+                                        <input type="time" class="form-control" id="inputTime">
+                                    </div>
                                 </div>
                             </fieldset>
                             <br>
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button class="btn btn-primary" type="submit" value="Submit">Submit form</button>
                         </form>
                     </div>
                 </div>

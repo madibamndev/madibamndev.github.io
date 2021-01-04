@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Oswald:wght@500&display=swap');
+
 body {
     background-color: #180d2e;
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (2500 - 300)));
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #A77CE4;
+    font-family: 'Oswald', sans-serif;
 }
 
 p {
     color: #FFFADE;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0625em;
+    line-height: 1.6;
 }
 
 a {
@@ -31,7 +38,7 @@ label {
 }
 
 .card {
-    background-color: #1B0A38;
+    background-color: #180d2e;
 }
 
 .breadcrumb {
