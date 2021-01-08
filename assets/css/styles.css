@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Oswald:wght@500&display=swap');
+
+body {
+    background-color: #180d2e;
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (2500 - 300)));
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #A77CE4;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: #FFFADE;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0625em;
+    line-height: 1.6;
+}
+
+a {
+    color: #A978F2;
+}
+
+small {
+    color: #E8D5B5;
+}
+
+fieldset {
+    color: #E8D5B5;
+}
+
+label {
+    color: #E8D5B5;
+}
+
+.badge {
+    cursor: pointer;
+}
+
+.jumbotron {
+    background-color: #180d2e;
+}
+
+.card {
+    background-color: #180d2e;
+}
+
+.modal-content {
+    background-color: #180d2e;
+}
+
+.alert-custom {
+    background-color: #20123d;
+}
+
+.breadcrumb {
+    background-color: #180d2e;
+}
+
+.tab-content {
+    background-color: #180d2e;
+}
+
+#collapseClothing {
+    background-color: #180d2e;
+}
+
+#collapseAccessories {
+    background-color: #180d2e;
+}
+
+#collapseFootwear {
+    background-color: #180d2e;
+}
+
+.list-group-item {
+    background-color: #1B0A38;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 35px;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
