@@ -33,12 +33,24 @@ label {
     color: #E8D5B5;
 }
 
+.badge {
+    cursor: pointer;
+}
+
 .jumbotron {
     background-color: #180d2e;
 }
 
 .card {
     background-color: #180d2e;
+}
+
+.modal-content {
+    background-color: #180d2e;
+}
+
+.alert-custom {
+    background-color: #20123d;
 }
 
 .breadcrumb {

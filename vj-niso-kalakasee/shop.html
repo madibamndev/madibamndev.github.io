@@ -52,10 +52,101 @@
                         <a class="nav-link" href="shop.html">Shop <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="checkout.html">Cart
+                        <a class="nav-link">Cart
                             <i class="fa fa-shopping-cart" aria-hidden="true" style="color: orange;"></i>
-                            <span id="notification" class="badge badge-warning">0</span>
+                            <!-- badge trigger modal -->
+                            <span id="notification" class="badge badge-warning" data-toggle="modal" data-target="#exampleModal">0</span>
                         </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Your Cart Items</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span style="color: #ffffff;" aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="alert alert-custom alert-dismissible fade show" role="alert">
+                                            <h5 class="mt-0">Item name</h5>
+                                                <p>Brief description of the item.</p>
+                                                <h6 class="mt-3">Select a colour:</h6>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadioboxRed" value="red">
+                                                        <label class="form-check-label" for="inlineRadioboxRed">Red</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadioboxBlue" value="blue">
+                                                        <label class="form-check-label" for="inlineRadioboxBlue">Blue</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadioboxBlack" value="black">
+                                                        <label class="form-check-label" for="inlineRadioboxBlack">Black</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadioboxWhite" value="white">
+                                                        <label class="form-check-label" for="inlineRadioboxWhite">White</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadioboxYellow" value="Yellow">
+                                                        <label class="form-check-label" for="inlineRadioboxYellow">Yellow</label>
+                                                    </div>
+                                                    <h6 class="mt-3">Select a quantity:</h6>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadio1Item" value="oneItem">
+                                                        <label class="form-check-label" for="inlineRadio1Item">1 item</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadiobox2Items" value="twoItems">
+                                                        <label class="form-check-label" for="inlineRadiobox2Items">2 items</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadiobox3Items" value="threeItems">
+                                                        <label class="form-check-label" for="inlineRadiobox3Items">3 items</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadiobox4Items" value="fourItems">
+                                                        <label class="form-check-label" for="inlineRadiobox4Items">4 items</label>
+                                                    </div>
+                                                    <h6 class="mt-3">Select a size:</h6>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadio1Size" value="extraSmall">
+                                                        <label class="form-check-label" for="inlineRadio1Size">XS</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadiobox2Size" value="small">
+                                                        <label class="form-check-label" for="inlineRadiobox2Size">S</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadiobox3Size" value="medium">
+                                                        <label class="form-check-label" for="inlineRadiobox3Size">M</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadiobox4Size" value="large">
+                                                        <label class="form-check-label" for="inlineRadiobox4Size">L</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineRadiobox5Size" value="extraLarge">
+                                                        <label class="form-check-label" for="inlineRadiobox5Size">XL</label>
+                                                    </div>
+                                                <h6 class="mt-3">Price tag:</h6>
+                                                <h4 class="text-warning">KSh 100.50</h4>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span style="color: #ffffff;" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <a class="btn btn-primary" href="checkout.html" role="button">Proceed to checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -147,8 +238,9 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-1" class="badge badge-warning">0</span> votes</h6>
-                                                                    <div id="rating-product-1" class="rating"> 
+                                                                    <div id="rating-product-1" class="rating">
                                                                         <input type="radio" name="rating" value="5">
                                                                         <label for="5">☆</label> 
                                                                         <input type="radio" name="rating" value="4">
@@ -176,8 +268,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -214,6 +307,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-2" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-2" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -243,8 +337,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -281,6 +376,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-3" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-3" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -310,8 +406,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -352,6 +449,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-4" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-4" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -381,8 +479,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -419,6 +518,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-5" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-5" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -448,8 +548,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -486,6 +587,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-6" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-6" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -515,8 +617,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -557,6 +660,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-7" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-7" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -586,8 +690,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -624,6 +729,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-8" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-8" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -653,8 +759,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -691,6 +798,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-9" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-9" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -720,8 +828,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -762,6 +871,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-10" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-10" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -791,8 +901,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -829,6 +940,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-11" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-11" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -858,8 +970,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -896,6 +1009,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-12" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-12" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -925,8 +1039,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -967,6 +1082,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-13" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-13" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -996,8 +1112,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1034,6 +1151,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-14" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-14" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1063,8 +1181,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1101,6 +1220,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-15" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-15" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1130,8 +1250,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1199,6 +1320,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-16" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-16" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1228,8 +1350,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1266,6 +1389,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-17" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-17" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1295,8 +1419,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1333,6 +1458,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-18" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-18" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1362,8 +1488,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1404,6 +1531,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-19" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-19" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1433,8 +1561,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1471,6 +1600,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-20" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-20" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1500,8 +1630,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1538,6 +1669,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-21" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-21" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1567,8 +1699,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1609,6 +1742,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-22" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-22" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1638,8 +1772,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1676,6 +1811,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-23" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-23" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1705,8 +1841,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1743,6 +1880,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-24" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-24" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1772,8 +1910,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1814,6 +1953,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-25" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-25" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1843,8 +1983,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1881,6 +2022,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-26" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-26" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1910,8 +2052,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1948,6 +2091,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-27" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-27" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -1977,8 +2121,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2046,6 +2191,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-28" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-28" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2075,8 +2221,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2113,6 +2260,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-29" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-29" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2142,8 +2290,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2180,6 +2329,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-30" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-30" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2209,8 +2359,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2251,6 +2402,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-31" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-31" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2280,8 +2432,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2318,6 +2471,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-32" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-32" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2347,8 +2501,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2385,6 +2540,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-33" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-33" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2414,8 +2570,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2456,6 +2613,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-34" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-34" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2485,8 +2643,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2523,6 +2682,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-35" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-35" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2552,8 +2712,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2590,6 +2751,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-36" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-36" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2619,8 +2781,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2661,6 +2824,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-37" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-37" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2690,8 +2854,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2728,6 +2893,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-38" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-38" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2757,8 +2923,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2795,6 +2962,7 @@
                                                                     <h5 class="card-title">Product name</h5>
                                                                     <p class="card-text pb-3">Write a brief description of the item in this space.</p>
                                                                     <h6>Product rating:</h6>
+                                                                    <p>Please rate!</p>
                                                                     <h6 class="float-right"><span id="rating-notification-39" class="badge badge-warning">0</span> votes</h6>
                                                                     <div id="rating-product-39" class="rating"> 
                                                                         <input type="radio" name="rating" value="5">
@@ -2824,8 +2992,9 @@
                                                                         <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
                                                                         <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
-                                                                    <h6>Price:</h6>
-                                                                    <button class="btn btn-primary product" type="button" role="button" aria-pressed="true"><strong>KSh</strong> 100.50</button>
+                                                                    <h6>Price tag:</h6>
+                                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
