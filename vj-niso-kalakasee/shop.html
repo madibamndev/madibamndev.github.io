@@ -55,7 +55,7 @@
                         <a class="nav-link">Cart
                             <i class="fa fa-shopping-cart" aria-hidden="true" style="color: orange;"></i>
                             <!-- badge trigger modal -->
-                            <span id="notification" class="badge badge-warning" data-toggle="modal" data-target="#exampleModal">0</span>
+                            <span id="notification" class="badge added-product badge-warning" data-toggle="modal" data-target="#exampleModal">0</span>
                         </a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -68,10 +68,13 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="alert alert-custom alert-dismissible fade show" role="alert">
-                                            <h5 class="mt-0">Item name</h5>
-                                                <p>Brief description of the item.</p>
-                                                <h6 class="mt-3">Select a colour:</h6>
+
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body">
+                                                <div class="alert alert-custom alert-dismissible fade show" role="alert">
+                                                    <h5 class="mt-0">Item name</h5>
+                                                    <p>Brief description of the item.</p>
+                                                    <h6 class="mt-3">Select a colour:</h6>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="radio" id="inlineRadioboxRed" value="red">
                                                         <label class="form-check-label" for="inlineRadioboxRed">Red</label>
@@ -130,12 +133,17 @@
                                                         <input class="form-check-input" type="radio" id="inlineRadiobox5Size" value="extraLarge">
                                                         <label class="form-check-label" for="inlineRadiobox5Size">XL</label>
                                                     </div>
-                                                <h6 class="mt-3">Price tag:</h6>
-                                                <h4 class="text-warning">KSh 100.50</h4>
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span style="color: #ffffff;" aria-hidden="true">&times;</span>
-                                            </button>
+                                                    <h6 class="mt-3">Price tag:</h6>
+                                                    <h4 class="text-warning">KSh 100.50</h4>
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span class="deleted-product" style="color: #ffffff;" aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
+
+
+                                        
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -252,25 +260,9 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
+                                                                    <button id="removed-product" class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -320,22 +312,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -389,22 +365,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -463,22 +423,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -532,22 +476,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -600,22 +528,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -674,22 +586,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -743,22 +639,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -811,22 +691,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -885,22 +749,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -954,22 +802,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1022,22 +854,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -1096,22 +912,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1165,22 +965,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1233,22 +1017,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -1334,22 +1102,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1403,22 +1155,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1471,22 +1207,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -1545,22 +1265,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1614,22 +1318,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1682,22 +1370,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -1756,22 +1428,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1825,22 +1481,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -1893,22 +1533,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -1967,22 +1591,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2036,22 +1644,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2104,22 +1696,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -2205,22 +1781,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2274,22 +1834,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2342,22 +1886,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -2416,22 +1944,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2485,22 +1997,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2553,22 +2049,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -2627,22 +2107,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2696,22 +2160,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2764,22 +2212,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -2838,22 +2270,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2907,22 +2323,6 @@
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
                                                                     </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
-                                                                    </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
                                                                     <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true">Add to cart</button>
@@ -2975,22 +2375,6 @@
                                                                         <label for="2">☆</label> 
                                                                         <input type="radio" name="rating" value="1">
                                                                         <label for="1">☆</label>
-                                                                    </div>
-                                                                    <h6>Colours:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/red-colour-swatch.svg" class="rounded float-left" alt="Red colour circular swatch">
-                                                                        <img src="assets/images/card/blue-colour-swatch.svg" class="rounded" alt="Blue colour circular swatch">
-                                                                        <img src="assets/images/card/black-colour-swatch.svg" class="rounded" alt="Black colour circular swatch">
-                                                                        <img src="assets/images/card/white-colour-swatch.svg" class="rounded" alt="White colour circular swatch">
-                                                                        <img src="assets/images/card/yellow-colour-swatch.svg" class="rounded" alt="Yellow colour circular swatch">
-                                                                    </div>
-                                                                    <h6>Sizes:</h6>
-                                                                    <div class="container">
-                                                                        <img src="assets/images/card/extra-small-badge.svg" class="rounded float-left" alt="Extra small size square badge">
-                                                                        <img src="assets/images/card/small-badge.svg" class="rounded" alt="Small size square badge">
-                                                                        <img src="assets/images/card/medium-badge.svg" class="rounded" alt="Medium size square badge">
-                                                                        <img src="assets/images/card/large-badge.svg" class="rounded" alt="Large size square badge">
-                                                                        <img src="assets/images/card/extra-large-badge.svg" class="rounded" alt="Extra large size square badge">
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
@@ -3081,7 +2465,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script>
     $('.product').click(function() {
-        $('#notification').html(function(i, val) { return val*1+1 });
+        $('.added-product').html(function(i, val) { return val*1+1 });
+    });
+    $('#removed-product').dbclick(function() {
+        $('#notification').html(function(i, val) { return val*1-1 });
     });
     $('#rating-product-1').click(function() {
         $('#rating-notification-1').html(function(i, val) { return val*1+1 });
