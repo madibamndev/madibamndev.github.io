@@ -33,8 +33,12 @@ label {
     color: #E8D5B5;
 }
 
-.badge {
+.shopping-cart {
     cursor: pointer;
+}
+
+.list-group-item-action:hover {
+    background-color: #231342;
 }
 
 .jumbotron {
@@ -51,6 +55,10 @@ label {
 
 .alert-custom {
     background-color: #20123d;
+}
+
+.toast-header {
+    background-color: #180d2e;
 }
 
 .breadcrumb {

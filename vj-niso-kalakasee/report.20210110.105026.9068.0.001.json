@@ -1,0 +1,389 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210110.105026.9068.0.001.json",
+    "dumpEventTime": "2021-01-10T10:50:26Z",
+    "dumpEventTimeStamp": "1610272226312",
+    "processId": 9068,
+    "threadId": null,
+    "cwd": "c:\\Users\\madib\\OneDrive\\Desktop\\vj-niso-kalakasee",
+    "commandLine": [
+      "C:\\Users\\madib\\AppData\\Local\\heroku\\client\\7.47.7\\bin\\..\\bin\\node.exe",
+      "C:\\Users\\madib\\AppData\\Local\\heroku\\client\\7.47.7\\bin\\..\\bin\\run",
+      "update"
+    ],
+    "nodejsVersion": "v12.16.2",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.2",
+      "v8": "7.8.279.23-node.34",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1e",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.2/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19041",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Pentium(R) CPU 4415U @ 2.30GHz",
+        "speed": 2304,
+        "user": 62899312,
+        "nice": 0,
+        "sys": 60600015,
+        "idle": 258989703,
+        "irq": 2070328
+      },
+      {
+        "model": "Intel(R) Pentium(R) CPU 4415U @ 2.30GHz",
+        "speed": 2304,
+        "user": 56056984,
+        "nice": 0,
+        "sys": 46939984,
+        "idle": 279491859,
+        "irq": 567859
+      },
+      {
+        "model": "Intel(R) Pentium(R) CPU 4415U @ 2.30GHz",
+        "speed": 2304,
+        "user": 71975140,
+        "nice": 0,
+        "sys": 55862328,
+        "idle": 254651359,
+        "irq": 592281
+      },
+      {
+        "model": "Intel(R) Pentium(R) CPU 4415U @ 2.30GHz",
+        "speed": 2304,
+        "user": 74500640,
+        "nice": 0,
+        "sys": 46362875,
+        "idle": 261625312,
+        "irq": 460984
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "18:56:80:dd:5e:1e",
+        "address": "fe80::c4c8:ea07:93fb:e57c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 7
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "18:56:80:dd:5e:1e",
+        "address": "192.168.1.77",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Yoga-530"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6a6122309",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a6126869",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a61256e8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a624dd82",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a6a6a27e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a6a52351",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a691e8ac",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a691a579",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a6941fbb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a66a1523",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a6eb730d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a6ecb76d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6a6e3c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000002ee010569bb",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 48361472,
+    "totalCommittedMemory": 48361472,
+    "usedMemory": 44341464,
+    "availableMemory": 2087352864,
+    "memoryLimit": 2131755008,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      },
+      "old_space": {
+        "memorySize": 23732224,
+        "committedMemory": 23732224,
+        "capacity": 23667064,
+        "used": 21802648,
+        "available": 1864416
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 692224,
+        "capacity": 452480,
+        "used": 452480,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1314816,
+        "committedMemory": 1314816,
+        "capacity": 804960,
+        "used": 804960,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 21262336,
+        "committedMemory": 21262336,
+        "capacity": 21245688,
+        "used": 21245688,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2880,
+        "used": 2880,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 2.843,
+    "kernelCpuSeconds": 1.234,
+    "cpuConsumptionPercent": 31.3615,
+    "maxRss": 74113024,
+    "pageFaults": {
+      "IORequired": 46729,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 766,
+      "writes": 8
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "=C:": "c:\\Users\\madib\\OneDrive\\Desktop\\vj-niso-kalakasee",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "APPDATA": "C:\\Users\\madib\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132435424104887568",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_12844_IBXLOFWKFNHVVCKW",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "YOGA-530",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "configsetroot": "C:\\WINDOWS\\ConfigSetRoot",
+    "DB_PASS": "mawingu",
+    "DB_USER": "mwemn",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HEROKU_BINPATH": "C:\\Users\\madib\\AppData\\Local\\heroku\\client\\bin\\heroku",
+    "HEROKU_HIDE_UPDATED_MESSAGE": "1",
+    "HEROKU_SKIP_ANALYTICS": "1",
+    "HEROKU_TIMESTAMPS": "1",
+    "HEROKU_UPDATE_INSTRUCTIONS": "update with: \"npm update -g heroku\"",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\madib",
+    "JAVA_HOME": "JAVA_HOME",
+    "LOCALAPPDATA": "C:\\Users\\madib\\AppData\\Local",
+    "LOGONSERVER": "\\\\YOGA-530",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\madib\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\madib\\OneDrive",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files\\Python38\\;C:\\ProgramData\\chocolatey\\bin\\;C:\\Program Files\\Microsoft VS Code\\bin\\;C:\\Users\\madib\\OneDrive\\Desktop\\Softwares\\mongodb-shell-windows-x86_64-4.4.0.zip\\mongodb-win32-x86_64-windows-4.4.0\\bin\\;C:\\Program Files\\MongoDB\\Server\\4.4\\bin\\;C:\\Program Files\\Python38\\Scripts\\;C:\\Program Files\\Git\\cmd\\;C:\\Program Files\\Git\\bin\\;C:\\Users\\madib\\AppData\\Local\\Programs\\Python\\Python38-32\\;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\madib\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts\\;C:\\Users\\madib\\AppData\\Local\\Programs\\Python\\Python38-32\\;C:\\Program Files (x86)\\Python;C:\\Program Files (x86)\\Python\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\madib\\OneDrive\\Desktop\\Softwares\\mongodb-shell-windows-x86_64-4.4.0.zip\\mongodb-win32-x86_64-windows-4.4.0\\bin\\;C:\\Program Files\\MongoDB\\Server\\4.4\\bin\\;C:\\Users\\madib\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\madib\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\madib\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW",
+    "PIPE_LOGGING": "true",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PYTHON_HOME": "C:\\Users\\madib\\AppData\\Local\\Programs\\Python\\Python38-32",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\madib\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\madib\\AppData\\Local\\Temp",
+    "USERDOMAIN": "YOGA-530",
+    "USERDOMAIN_ROAMINGPROFILE": "YOGA-530",
+    "USERNAME": "madib",
+    "USERPROFILE": "C:\\Users\\madib",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_CWD": "C:\\Program Files\\Microsoft VS Code",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_IPC_HOOK": "\\\\.\\pipe\\0f7b7ff9652b70de32ff76b70d7cfba9-1.52.1-main-sock",
+    "VSCODE_IPC_HOOK_EXTHOST": "\\\\.\\pipe\\vscode-ipc-15cac5eb-835c-4b3a-b30e-2dc01b094785-sock",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_NODE_CACHED_DATA_DIR": "C:\\Users\\madib\\AppData\\Roaming\\Code\\CachedData\\ea3859d4ba2f3e577a159bc91e3074c5d85c0523",
+    "VSCODE_PID": "12844",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Users\\madib\\AppData\\Local\\heroku\\client\\7.47.7\\bin\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}
