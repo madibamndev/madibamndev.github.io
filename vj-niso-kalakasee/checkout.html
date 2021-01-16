@@ -80,69 +80,66 @@
         <main>
             <div class="container-fluid">        
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 pb-3 order-sm-1 order-md-1 order-lg-2 order-xl-2">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 pb-3">
                         <article>
-                            <h3 class="text-center">Cart items <span class="badge badge-warning">3</span></h3>
+                            <h3>Cart items <span class="badge badge-warning">0</span></h3>
                         </article>
                         <br>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="form-inline">
-                                    <h5 class="card-title" style="padding-right: 90px;">1<sup>st</sup> Item</h5>
-                                    <a href="#" class="btn btn-primary"><strong>KSh</strong> 100.50</a>
+                        <div class="list-group">
+                            <div class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Item name</h5>
+                                    <small class="pb-3">Clothing</small>
                                 </div>
-                                <h6 style="color: #98cff8;">Contents:</h6>
-                                <p class="card-text">Item's</p>
-                                <p class="lead"><em>name, colour, size, quantity</em></p>
+                                <p class="mb-1">
+                                    Colour:<span><em></em></span><br>
+                                    Size:<span><em></em></span><br>
+                                    Quantity:<span><em></em></span><br>
+                                </p>
+                                <h4 class="text-warning float-right">KSh 100.50</h4>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="form-inline">
-                                    <h5 class="card-title" style="padding-right: 90px;">2<sup>nd</sup> Item</h5>
-                                    <a href="#" class="btn btn-primary"><strong>KSh</strong> 100.50</a>
-                                </div>
-                                <h6 style="color: #98cff8;">Contents:</h6>
-                                <p class="card-text">Item's</p>
-                                <p class="lead"><em>name, colour, size, quantity</em></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="form-inline">
-                                    <h5 class="card-title" style="padding-right: 90px;">3<sup>rd</sup> Item</h5>
-                                    <a href="#" class="btn btn-primary"><strong>KSh</strong> 100.50</a>
-                                </div>
-                                <h6 style="color: #98cff8;">Contents:</h6>
-                                <p class="card-text">Item's</p>
-                                <p class="lead"><em>name, colour, size, quantity</em></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title" style="padding-right: 90px;">Promo code</h5>
-                                <p class="card-text">KALAVIS254</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title" style="padding-right: 90px;">Total <strong>KSH</strong></h5>
-                                <a href="#" class="btn btn-success"><strong>KSh</strong> 301.50</a>
-                            </div>
-                        </div>
-                        <div class="pt-3 pb-3">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Promo code" aria-label="Promo code" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Redeem</button>
+                            
+                            <div class="list-group-item list-group-item-action">
+                                <div class="pt-3 pb-3">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Promo code" aria-label="Redeem Promo code here" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-success" type="button" id="button-addon2" data-toggle="collapse" data-target="#collapsePromoCode" aria-expanded="false" aria-controls="collapsePromoCode">Redeem</button>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="list-group-item list-group-item-action">
+                                <div class="collapse" id="collapsePromoCode">
+                                    <div class="card card-body">
+                                       <div class="list-group-item list-group-item-action">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1 text-success">Promo code</h5>
+                                                <p><em>Get 10 percent off</em></p> 
+                                            </div>
+                                            <p class="mb-1"><strong>KALAVIS254</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Total Price</h5>
+                                    <h4 class="text-primary float-right"><strong>KSh</strong> 0.00</h4> 
+                                </div>
+                            </div>
+                            <div class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 text-success">Total Price + <small class="text-warning">Promo code</small></h5>
+                                    <h4 class="text-danger float-right"><span class="text-light">0.00 * 0.90 = </span><strong>KSh</strong> 0.00</h4> 
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <br>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 offset-xl-1 pb-3 order-sm-2 order-md-2 order-lg-1 order-xl-1">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
                         <article>
-                            <h3 class="text-center">Checkout Form</h3>
+                            <h3>Checkout Form</h3>
                         </article>
                         <br>
                         <form>
