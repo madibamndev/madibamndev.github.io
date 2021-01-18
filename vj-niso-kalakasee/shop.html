@@ -51,6 +51,11 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="shop.html">Shop <span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#checkoutInfo">Cart
+                            <i class="fa fa-shopping-cart" aria-hidden="true" style="color: orange;"></i>
+                        </a>
+                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="&#128269 Search" aria-label="Search">
@@ -157,9 +162,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem1" aria-expanded="false" aria-controls="collapseItem1">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem1ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem1" aria-expanded="false" aria-controls="revealItem1">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -212,9 +215,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false" aria-controls="collapseItem2">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem2ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem2" aria-expanded="false" aria-controls="revealItem2">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -267,9 +268,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem3" aria-expanded="false" aria-controls="collapseItem3">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem3ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem3" aria-expanded="false" aria-controls="revealItem3">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -326,9 +325,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem4" aria-expanded="false" aria-controls="collapseItem4">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem4ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem4" aria-expanded="false" aria-controls="revealItem4">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -381,9 +378,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem5" aria-expanded="false" aria-controls="collapseItem5">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem5ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem5" aria-expanded="false" aria-controls="revealItem5">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -436,9 +431,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem6" aria-expanded="false" aria-controls="collapseItem6">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem6ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#revealItem6" aria-expanded="false" aria-controls="revealItem6">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -495,9 +488,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem7" aria-expanded="false" aria-controls="collapseItem7">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem7ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem7" aria-expanded="false" aria-controls="revealItem7">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -550,9 +541,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem8" aria-expanded="false" aria-controls="collapseItem8">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem8ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem8" aria-expanded="false" aria-controls="revealItem8">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -605,9 +594,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem9" aria-expanded="false" aria-controls="collapseItem9">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem9ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem9" aria-expanded="false" aria-controls="revealItem9">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -664,9 +651,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem10" aria-expanded="false" aria-controls="collapseItem10">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem10ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem10" aria-expanded="false" aria-controls="revealItem10">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -719,9 +704,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem11" aria-expanded="false" aria-controls="collapseItem11">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem11ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem11" aria-expanded="false" aria-controls="revealItem11">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -774,9 +757,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem12" aria-expanded="false" aria-controls="collapseItem12">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem12ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem12" aria-expanded="false" aria-controls="revealItem12">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -833,9 +814,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem13" aria-expanded="false" aria-controls="collapseItem13">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem13ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem13" aria-expanded="false" aria-controls="revealItem13">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -888,9 +867,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem14" aria-expanded="false" aria-controls="collapseItem14">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem14ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem14" aria-expanded="false" aria-controls="revealItem14">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -943,9 +920,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem15" aria-expanded="false" aria-controls="collapseItem15">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem15ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem15" aria-expanded="false" aria-controls="revealItem15">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1029,9 +1004,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem16" aria-expanded="false" aria-controls="collapseItem16">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem16ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem16" aria-expanded="false" aria-controls="revealItem16">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1084,9 +1057,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem17" aria-expanded="false" aria-controls="collapseItem17">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem17ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem17" aria-expanded="false" aria-controls="revealItem17">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1139,9 +1110,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem18" aria-expanded="false" aria-controls="collapseItem18">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem18ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem18" aria-expanded="false" aria-controls="revealItem18">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1198,9 +1167,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem19" aria-expanded="false" aria-controls="collapseItem19">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem19ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem19" aria-expanded="false" aria-controls="revealItem19">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1253,9 +1220,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem20" aria-expanded="false" aria-controls="collapseItem20">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem20ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem20" aria-expanded="false" aria-controls="revealItem20">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1308,9 +1273,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem21" aria-expanded="false" aria-controls="collapseItem21">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem21ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem21" aria-expanded="false" aria-controls="revealItem21">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1367,9 +1330,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem22" aria-expanded="false" aria-controls="collapseItem22">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem22ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem22" aria-expanded="false" aria-controls="revealItem22">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1422,9 +1383,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem23" aria-expanded="false" aria-controls="collapseItem23">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem23ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem23" aria-expanded="false" aria-controls="revealItem23">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1477,9 +1436,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem24" aria-expanded="false" aria-controls="collapseItem24">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem24ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem24" aria-expanded="false" aria-controls="revealItem24">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1536,9 +1493,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem25" aria-expanded="false" aria-controls="collapseItem25">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem25ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem25" aria-expanded="false" aria-controls="revealItem25">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1591,9 +1546,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem26" aria-expanded="false" aria-controls="collapseItem26">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem26ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem26" aria-expanded="false" aria-controls="revealItem26">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1646,9 +1599,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem27" aria-expanded="false" aria-controls="collapseItem27">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem27ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem27" aria-expanded="false" aria-controls="revealItem27">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1732,9 +1683,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem28" aria-expanded="false" aria-controls="collapseItem28">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem28ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem28" aria-expanded="false" aria-controls="revealItem28">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1787,9 +1736,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem29" aria-expanded="false" aria-controls="collapseItem29">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem29ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem29" aria-expanded="false" aria-controls="revealItem29">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1842,9 +1789,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem30" aria-expanded="false" aria-controls="collapseItem30">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem30ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#revealItem30" aria-expanded="false" aria-controls="revealItem30">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1901,9 +1846,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem31" aria-expanded="false" aria-controls="collapseItem31">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem31ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem31" aria-expanded="false" aria-controls="revealItem31">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1956,9 +1899,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem32" aria-expanded="false" aria-controls="collapseItem32">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem32ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem32" aria-expanded="false" aria-controls="revealItem32">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2011,9 +1952,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem33" aria-expanded="false" aria-controls="collapseItem33">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem33ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem33" aria-expanded="false" aria-controls="revealItem33">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2070,9 +2009,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem34" aria-expanded="false" aria-controls="collapseItem34">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem34ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem34" aria-expanded="false" aria-controls="revealItem34">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2125,9 +2062,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem35" aria-expanded="false" aria-controls="collapseItem35">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem35ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem35" aria-expanded="false" aria-controls="revealItem35">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2180,9 +2115,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem36" aria-expanded="false" aria-controls="collapseItem36">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem36ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem36" aria-expanded="false" aria-controls="revealItem36">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2239,9 +2172,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem37" aria-expanded="false" aria-controls="collapseItem37">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem37ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem37" aria-expanded="false" aria-controls="revealItem37">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2294,9 +2225,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem38" aria-expanded="false" aria-controls="collapseItem38">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem38ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem38" aria-expanded="false" aria-controls="revealItem38">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2349,9 +2278,7 @@
                                                                     </div>
                                                                     <h6>Price tag:</h6>
                                                                     <h4 class="text-warning">KSh 100.50</h4>
-                                                                    <div data-toggle="tooltip" data-placement="top" title="Click or Press to add or remove item">
-                                                                        <button class="btn btn-primary product float-right" type="button" role="button" aria-pressed="true" data-toggle="collapse" data-target="#collapseItem39" aria-expanded="false" aria-controls="collapseItem39">Add to cart</button>
-                                                                    </div>
+                                                                    <button id="addItem39ToCart" class="btn btn-primary product float-right checkout-item" type="button" role="button" aria-pressed="true" data-target="#revealItem39" aria-expanded="false" aria-controls="revealItem39">Add to cart</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2365,511 +2292,837 @@
                         </div>
                     </div>
                 </div>
+                <br>
+                <!-- Checkout Shopping cart Button starts here -->
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pb-3">
+                        <a class="btn btn-success float-right" href="#cartItems" role="button">
+                            Checkout Items <span id="allItemsNotification" class="badge badge-warning">0</span> 
+                        </a>
+                    </div>
+                </div>
+                <!-- Checkout Shopping cart Button ends here -->
+                <!-- Checkout content starts here -->
+                <div class="row">
+                    <article id="checkoutInfo" >
+                        <div class="jumbotron rounded-0">
+                            <h1 class="display-4">Checkout Info!</h1>
+                            <p class="lead">Below is your <em>Checkout Form</em> and your <em>Shopping Cart Items</em>.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-7 pb-3">
+                        <article id="cartItems">
+                            <h3>Cart items <span id="itemNotification" class="badge badge-warning">0</span></h3>
+                            <br>
+                            <div class="list-group">
+                                <div class="item" id="revealItem1">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem2">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>    
+                                <div class="item" id="revealItem3">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>     
+                                <div class="item" id="revealItem4">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem5">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem6">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem7">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem8">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem9">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem10">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem11">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem12">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem13">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem14">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem15">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Clothing</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem16">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem17">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem18">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem19">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem20">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem21">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem22">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem23">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem24">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem25">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem26">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem27">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Accessories</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem28">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem29">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem30">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem31">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem32">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem33">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem34">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem35">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem36">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem37">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem38">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item" id="revealItem39">
+                                    <div style="background-color: #1e0f3b;" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <h4>Item name</h4>
+                                        <h4 class="text-warning text-right product-price">KSh 100.50</h4>
+                                        <p>Category: <small>Footwear</small></p>
+                                        <p>Brief description of the item.</p>
+                                        <div class="input-group mb-3">
+                                            <div class="product-pass-quantity">
+                                                <label class="product-pass-quantity" for="product-pass-quantity">Quantity:</label>
+                                                <input class="form-control" type="number" value="1" min="1">
+                                            </div>
+                                        </div>
+                                        <p class="text-info display-5 product-quantity-price"> <strong>KSh <span class="text-success h1">100.50</span></strong></p>
+                                        <button type="button" class="close remove-item remove-checkout-item" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action">
+                                    <div class="pt-3 pb-3">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Redeem Promo code here" aria-label="Promo code" aria-describedby="button-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-success" type="button" id="button-addon2" data-toggle="collapse" data-target="#collapsePromoCode" aria-expanded="false" aria-controls="collapsePromoCode">Redeem</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action">
+                                    <div class="collapse" id="collapsePromoCode">
+                                        <div class="card card-body">
+                                        <div class="list-group-item list-group-item-action">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <h5 class="mb-1 text-success">Promo code</h5>
+                                                    <p><em>Get 10 percent off</em></p> 
+                                                </div>
+                                                <p class="mb-1"><strong id="promoCode">KALAVIS254</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Subtotal Price</h5>
+                                        <h4 class="text-primary float-right totals-value"><strong>KSh</strong> <span id="cartSubTotalPrice">0.00</span></h4> 
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Estimated Tax</h5>
+                                        <h4 class="text-info float-right totals-value"><strong>KSh</strong> <span id="cartTax">0.00</span></h4> 
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Transport Cost</h5>
+                                        <h4 class="text-info float-right totals-value"><strong>KSh</strong> <span id="transportCost">0.00</span></h4> 
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 text-success">Total Price + <small class="text-warning">Promo code</small></h5>
+                                        <h4 class="text-danger float-right totals-value"><span id="cart-total-value cartTotalPrice" class="text-light">0.00 * 0.90 = </span><strong>KSh</strong> <span>0.00</span></h4> 
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+                        <article>
+                            <h3>Checkout Form</h3>
+                            <br>
+                            <form>
+                                <fieldset>
+                                    <legend>Billing Contact Information</legend>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="customControlValidationFirstName">First Name:</label>
+                                            <input type="text" class="form-control" id="customControlValidationFirstName" placeholder="First name">
+                                                <div class="invalid-feedback">
+                                                    Please write a valid first name
+                                                </div>
+                                        </div>
+                                        <div class="col">
+                                            <label for="customControlValidationLastName">Last Name:</label>
+                                            <input type="text" class="form-control" id="customControlValidationLastName" placeholder="Last name">
+                                                <div class="invalid-feedback">
+                                                    Please write a valid last name
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="customControlValidationEmail">Email address:</label>
+                                        <input type="email" class="form-control" id="customControlValidationEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                            <div class="invalid-feedback">
+                                                Please write a valid email
+                                            </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="inputAddress">Delivery Address</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="Street name + House number">
+                                    </div>
+                                    <br>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                                        <label class="custom-control-label" for="customControlValidation1">Lipa na M-pesa</label>
+                                        <div class="invalid-feedback">Please check this checkbox</div>
+                                    </div>
+                                </fieldset>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Continue to checkout</button>
+                            </form>
+                        </article>
+                    </div>
+                </div>
+                <!-- Checkout content ends here -->
             </div>
         </main>
         <!-- Main content ends here -->
-        <br>
-        <!-- Shopping cart Modal start here -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pb-3">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-success float-right" data-toggle="modal" data-target="#shoppingCartModal">Cart 
-                        <i id="allItemsNotification" class="fa fa-shopping-cart" aria-hidden="true" style="color: orange;"></i>
-                        <span class="badge badge-warning">Items</span>
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="shoppingCartModal" tabindex="-1" aria-labelledby="shoppingCartModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="shoppingCartModalLabel">Your Cart Items</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="collapse" id="collapseItem1">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem2">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem3">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem4">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem5">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem6">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem7">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem8">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div class="collapse" id="collapseItem9">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem10">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem11">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem12">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem13">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem14">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem15">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Clothing</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem16">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem17">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem18">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem19">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem20">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem21">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem22">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem23">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem24">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem25">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem26">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem27">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Accessories</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem28">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem29">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem30">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem31">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem32">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem33">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem34">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem35">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem36">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem37">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem38">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="collapseItem39">
-                                        <div class="list-group">
-                                            <div class="list-group-item list-group-item-action">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Item name</h5>
-                                                    <small>Footwear</small>
-                                                </div>
-                                                <p class="mb-1">Brief description of the item.</p>
-                                                <h4 class="text-warning float-right">KSh 100.50</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <a class="btn btn-primary" href="checkout.html" role="button">Proceed to checkout</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Shopping cart Modal ends here -->
         <br>
         <!-- Footer content starts here -->
         <footer>
@@ -2918,7 +3171,6 @@
                 <li class="breadcrumb-item"><a href="bookings.html">Bookings</a></li>
                 <li class="breadcrumb-item"><a href="contact.html">Contact</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shop</li>
-                <li class="breadcrumb-item"><a href="checkout.html">Cart</a></li>
             </ol>
         </nav>
         <br>
@@ -2940,128 +3192,793 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
   <script>
-    $('.product').click(function() {
+    $(document).ready(function() {
+
+        /* Set rates */
+        var taxRate = 1.16;
+        var fadeTime = 300;
+        var promoCode = 10;
+        var transportCost = 100;
+
+        /* Assign actions */
+        $('.pass-quantity input').change(function() {
+            updateQuantity(this);
+        });
+
+        $('.remove-item button').click(function() {
+            removeItem(this);
+        });
+
+
+        /* Recalculate cart */
+        function recalculateCart() {
+            var subtotal = 0.00;
+
+            /* Sum up row totals */
+            $('.item').each(function() {
+            subtotal += parseFloat($(this).children('.product-quantity-price').text());
+            });
+
+            /* Calculate totals */
+            var tax = subtotal * taxRate;
+            var transportCost = subtotal * 100;
+            var total = subtotal + tax + transportCost;
+
+            /* Update totals display */
+            $('.cart-total-value').fadeOut(fadeTime, function() {
+                $('#cartSubTotalPrice').html(subtotal.toFixed());
+                $('#cartTax').html(tax.toFixed());
+                $('#transportCost').html(tax.toFixed());
+                $('#cartTotalPrice').html(total.toFixed());
+                if (total == 0) {
+                $('.checkout').fadeOut(fadeTime);
+                } else {
+                $('.checkout').fadeIn(fadeTime);
+                }
+                $('.totals-value').fadeIn(fadeTime);
+            });
+        }
+
+
+        /* Update quantity */
+        function updateQuantity(quantityInput) {
+            /* Calculate line price */
+            var productRow = $(quantityInput).parent().parent();
+            var price = parseFloat(productRow.children('.product-price').text());
+            var quantity = $(quantityInput).val();
+            var linePrice = price * quantity;
+
+     /* Update line price display and recalc cart totals */
+     productRow.children('.product-quantity-price').each(function() {
+       $(this).fadeOut(fadeTime, function() {
+         $(this).text(linePrice.toFixed());
+         recalculateCart();
+         $(this).fadeIn(fadeTime);
+       });
+     });
+   }
+
+   /* Remove item from cart */
+   function removeItem(removeButton) {
+     /* Remove row from DOM and recalc cart total */
+     var productRow = $(removeButton).parent().parent();
+     productRow.slideUp(fadeTime, function() {
+       productRow.remove();
+       recalculateCart();
+     });
+   }
+
+ });
+
+    $(document).ready(function(){
+        $("#addItem1ToCart").one("click", function(){
+            $("#revealItem1").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem2ToCart").one("click", function(){
+            $("#revealItem2").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem3ToCart").one("click", function(){
+            $("#revealItem3").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem4ToCart").one("click", function(){
+            $("#revealItem4").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem5ToCart").one("click", function(){
+            $("#revealItem5").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem6ToCart").one("click", function(){
+            $("#revealItem6").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem7ToCart").one("click", function(){
+            $("#revealItem7").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem8ToCart").one("click", function(){
+            $("#revealItem8").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem9ToCart").one("click", function(){
+            $("#revealItem9").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem10ToCart").one("click", function(){
+            $("#revealItem10").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem11ToCart").one("click", function(){
+            $("#revealItem11").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem12ToCart").one("click", function(){
+            $("#revealItem12").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem13ToCart").one("click", function(){
+            $("#revealItem13").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem14ToCart").one("click", function(){
+            $("#revealItem14").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem15ToCart").one("click", function(){
+            $("#revealItem15").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem15ToCart").one("click", function(){
+            $("#revealItem15").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem16ToCart").one("click", function(){
+            $("#revealItem16").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem17ToCart").one("click", function(){
+            $("#revealItem17").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem18ToCart").one("click", function(){
+            $("#revealItem18").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem19ToCart").one("click", function(){
+            $("#revealItem19").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem20ToCart").one("click", function(){
+            $("#revealItem20").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem21ToCart").one("click", function(){
+            $("#revealItem21").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem22ToCart").one("click", function(){
+            $("#revealItem22").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem23ToCart").one("click", function(){
+            $("#revealItem23").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem24ToCart").one("click", function(){
+            $("#revealItem24").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem25ToCart").one("click", function(){
+            $("#revealItem25").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem25ToCart").one("click", function(){
+            $("#revealItem25").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem26ToCart").one("click", function(){
+            $("#revealItem26").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem27ToCart").one("click", function(){
+            $("#revealItem27").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem28ToCart").one("click", function(){
+            $("#revealItem28").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem29ToCart").one("click", function(){
+            $("#revealItem29").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem30ToCart").one("click", function(){
+            $("#revealItem30").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem31ToCart").one("click", function(){
+            $("#revealItem31").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem32ToCart").one("click", function(){
+            $("#revealItem32").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem33ToCart").one("click", function(){
+            $("#revealItem33").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem34ToCart").one("click", function(){
+            $("#revealItem34").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem35ToCart").one("click", function(){
+            $("#revealItem35").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem36ToCart").one("click", function(){
+            $("#revealItem36").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem37ToCart").one("click", function(){
+            $("#revealItem37").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem38ToCart").one("click", function(){
+            $("#revealItem38").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#addItem39ToCart").one("click", function(){
+            $("#revealItem39").show();
+        });
+    });
+    $('.product').one("click", function() {
         $('.added-product').html(function(i, val) { return val*1+1 });
     });
-    $('#removed-product').click(function() {
+    $('#removed-product').one("click", function() {
         $('#notification').html(function(i, val) { return val*1-1 });
     });
-    $('#rating-product-1').click(function() {
+    $('#rating-product-1').one("click", function() {
         $('#rating-notification-1').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-2').click(function() {
+    $('#rating-product-2').one("click", function() {
         $('#rating-notification-2').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-3').click(function() {
+    $('#rating-product-3').one("click", function() {
         $('#rating-notification-3').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-4').click(function() {
+    $('#rating-product-4').one("click", function() {
         $('#rating-notification-4').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-5').click(function() {
+    $('#rating-product-5').one("click", function() {
         $('#rating-notification-5').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-6').click(function() {
+    $('#rating-product-6').one("click", function() {
         $('#rating-notification-6').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-7').click(function() {
+    $('#rating-product-7').one("click", function() {
         $('#rating-notification-7').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-8').click(function() {
+    $('#rating-product-8').one("click", function() {
         $('#rating-notification-8').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-9').click(function() {
+    $('#rating-product-9').one("click", function() {
         $('#rating-notification-9').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-10').click(function() {
+    $('#rating-product-10').one("click", function() {
         $('#rating-notification-10').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-11').click(function() {
+    $('#rating-product-11').one("click", function() {
         $('#rating-notification-11').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-12').click(function() {
+    $('#rating-product-12').one("click", function() {
         $('#rating-notification-12').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-13').click(function() {
+    $('#rating-product-13').one("click", function() {
         $('#rating-notification-13').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-14').click(function() {
+    $('#rating-product-14').one("click", function() {
         $('#rating-notification-14').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-15').click(function() {
+    $('#rating-product-15').one("click", function() {
         $('#rating-notification-15').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-16').click(function() {
+    $('#rating-product-16').one("click", function() {
         $('#rating-notification-16').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-17').click(function() {
+    $('#rating-product-17').one("click", function() {
         $('#rating-notification-17').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-18').click(function() {
+    $('#rating-product-18').one("click", function() {
         $('#rating-notification-18').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-19').click(function() {
+    $('#rating-product-19').one("click", function() {
         $('#rating-notification-19').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-20').click(function() {
+    $('#rating-product-20').one("click", function() {
         $('#rating-notification-20').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-21').click(function() {
+    $('#rating-product-21').one("click", function() {
         $('#rating-notification-21').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-22').click(function() {
+    $('#rating-product-22').one("click", function() {
         $('#rating-notification-22').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-23').click(function() {
+    $('#rating-product-23').one("click", function() {
         $('#rating-notification-23').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-24').click(function() {
+    $('#rating-product-24').one("click", function() {
         $('#rating-notification-24').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-25').click(function() {
+    $('#rating-product-25').one("click", function() {
         $('#rating-notification-25').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-26').click(function() {
+    $('#rating-product-26').one("click", function() {
         $('#rating-notification-26').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-27').click(function() {
+    $('#rating-product-27').one("click", function() {
         $('#rating-notification-27').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-28').click(function() {
+    $('#rating-product-28').one("click", function() {
         $('#rating-notification-28').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-29').click(function() {
+    $('#rating-product-29').one("click", function() {
         $('#rating-notification-29').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-30').click(function() {
+    $('#rating-product-30').one("click", function() {
         $('#rating-notification-30').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-31').click(function() {
+    $('#rating-product-31').one("click", function() {
         $('#rating-notification-31').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-32').click(function() {
+    $('#rating-product-32').one("click", function() {
         $('#rating-notification-32').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-33').click(function() {
+    $('#rating-product-33').one("click", function() {
         $('#rating-notification-33').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-34').click(function() {
+    $('#rating-product-34').one("click", function() {
         $('#rating-notification-34').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-35').click(function() {
+    $('#rating-product-35').one("click", function() {
         $('#rating-notification-35').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-36').click(function() {
+    $('#rating-product-36').one("click", function() {
         $('#rating-notification-36').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-37').click(function() {
+    $('#rating-product-37').one("click", function() {
         $('#rating-notification-37').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-38').click(function() {
+    $('#rating-product-38').one("click", function() {
         $('#rating-notification-38').html(function(i, val) { return val*1+1 });
     });
-    $('#rating-product-39').click(function() {
+    $('#rating-product-39').one("click", function() {
         $('#rating-notification-39').html(function(i, val) { return val*1+1 });
+    });
+    $('#itemNotification').data('count', 0);
+    $('.remove-item').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') - 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#allItemsNotification').data('count', 0);
+    $('.remove-checkout-item').one("click", function(){
+        $('#allItemsNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') - 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#allItemsNotification').data('count', 0);
+    $('.checkout-item').one("click", function(){
+        $('#allItemsNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#itemNotification').data('count', 0);
+    $('#addItem1ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem2ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem3ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem4ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem5ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem6ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem7ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem8ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem9ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem10ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem11ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem12ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem13ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem14ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem15ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem16ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem17ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem18ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem19ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem20ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem21ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem22ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem23ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem24ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem25ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem26ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem27ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem28ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem29ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem30ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem31ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem32ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem33ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem34ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem35ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem36ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem37ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem38ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
+    });
+    $('#addItem39ToCart').one("click", function(){
+        $('#itemNotification').html(function(){
+            var $this = $(this),
+                count = $this.data('count') + 1;
+
+            $this.data('count', count);
+            return count;
+        });
     });
   </script>
 </body>

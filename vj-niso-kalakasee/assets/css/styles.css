@@ -37,9 +37,10 @@ label {
     cursor: pointer;
 }
 
-.list-group-item-action:hover {
+.list-group-item:hover {
     background-color: #231342;
 }
+
 
 .jumbotron {
     background-color: #180d2e;
@@ -120,4 +121,166 @@ label {
 
 .rating:hover>input:checked~label:before {
     opacity: 0.4
+}
+
+#revealItem1 {
+    display: none;
+}
+
+#revealItem2 {
+    display: none;
+}
+
+#revealItem3 {
+    display: none;
+}
+
+#revealItem4 {
+    display: none;
+}
+
+#revealItem5 {
+    display: none;
+}
+#revealItem6 {
+    display: none;
+}
+
+#revealItem7 {
+    display: none;
+}
+
+#revealItem8 {
+    display: none;
+}
+
+#revealItem9 {
+    display: none;
+}
+
+#revealItem10 {
+    display: none;
+}
+
+#revealItem11 {
+    display: none;
+}
+
+#revealItem12 {
+    display: none;
+}
+
+#revealItem13 {
+    display: none;
+}
+#revealItem14 {
+    display: none;
+}
+
+#revealItem15 {
+    display: none;
+}
+
+#revealItem16 {
+    display: none;
+}
+
+#revealItem17 {
+    display: none;
+}
+
+#revealItem18 {
+    display: none;
+}
+
+#revealItem19 {
+    display: none;
+}
+
+#revealItem20 {
+    display: none;
+}
+
+#revealItem21 {
+    display: none;
+}
+
+#revealItem22 {
+    display: none;
+}
+
+#revealItem23 {
+    display: none;
+}
+
+#revealItem24 {
+    display: none;
+}
+
+#revealItem25 {
+    display: none;
+}
+
+#revealItem26 {
+    display: none;
+}
+
+#revealItem27 {
+    display: none;
+}
+
+#revealItem28 {
+    display: none;
+}
+
+#revealItem29 {
+    display: none;
+}
+
+#revealItem30 {
+    display: none;
+}
+
+#revealItem31 {
+    display: none;
+}
+
+#revealItem32 {
+    display: none;
+}
+
+#revealItem33 {
+    display: none;
+}
+
+#revealItem32 {
+    display: none;
+}
+
+#revealItem33 {
+    display: none;
+}
+
+#revealItem34 {
+    display: none;
+}
+
+#revealItem35 {
+    display: none;
+}
+
+#revealItem36 {
+    display: none;
+}
+
+#revealItem37 {
+    display: none;
+}
+
+#revealItem38 {
+    display: none;
+}
+
+#revealItem39 {
+    display: none;
 }
