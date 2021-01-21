@@ -33,6 +33,30 @@ label {
     color: #E8D5B5;
 }
 
+hr {
+    background-color: #E8D5B5;
+    height: 1px;
+    border: 0;
+}
+
+dt {
+    color: #A978F2;
+}
+
+
+
+.cart-item-card {
+    display: none;
+}
+
+.cart-item-card:hover {
+    background-color: #1e103a;
+}
+
+.cart-item-description-list:hover {
+    background-color: #180d2e;
+}
+
 .shopping-cart {
     cursor: pointer;
 }
